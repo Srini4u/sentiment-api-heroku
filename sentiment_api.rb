@@ -19,21 +19,21 @@ class SentimentApi < Sinatra::Base
   
   @@the_logic = Analyzer.new
 
-  get '/v1/word/:word.json' do
+  get '/word/:word.json' do
     res = @@the_logic.word(params[:word])
     content_type 'application/json'
     body res.to_json
     status 200
   end
 
-  post '/v1/word/:word.json' do
+  post '/word/:word.json' do
     res = @@the_logic.add_word(params[:word],params[:value])
     content_type 'application/json'
     body res.to_json
     status 200
   end
 
-  get '/v1/sentence/:sentence.json' do
+  get '/sentence/:sentence.json' do
     res = @@the_logic.sentence(params[:sentence])
     content_type 'application/json'
     body res.to_json

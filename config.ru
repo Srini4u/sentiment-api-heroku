@@ -1,1 +1,3 @@
-version_1/config.ru
+require './sentiment_api.rb'
+
+run Sinatra::Application
