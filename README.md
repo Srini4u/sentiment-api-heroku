@@ -1,4 +1,4 @@
-## Sentiment API Example
+# Sentiment API Example
 
 This is a very basic API that returns the sentiment value of a word or a sentence. You can define the sentiment value of any additional word that is not in the dictionary.
 
@@ -6,11 +6,11 @@ The API is meant to serve an example of how you can easily create an API, and ho
 
 The original sentiment values are taken from the dataset AFINN-111.txt from [Technical University of Denmark](http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=6010) 
 
-# Versions 
+## Versions 
 
 See the full version list of this API [here](https://github.com/3scale/sentiment-api-example/blob/master/README.md).
 
-# Usage
+## Usage
 
 Start the API...
 
@@ -24,7 +24,7 @@ The above call returns
 
 	{"word":"fantastic","sentiment":4}
 
-# Deploying the API to Heroku
+## Deploying the API to Heroku
 
 Before deploying your application, you must have installed the Heroku
 toolbelt and be already logged in to Heroku. For more help on this
